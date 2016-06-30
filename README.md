@@ -1,10 +1,12 @@
-![SteVe](src/main/resources/webapp/static/images/logo.png) 
+![SteVe](src/main/resources/webapp/static/images/logo.png)
 
 [![Build Status](https://travis-ci.org/RWTH-i5-IDSG/steve.svg)](https://travis-ci.org/RWTH-i5-IDSG/steve)
 [![Coverity Status](https://scan.coverity.com/projects/6601/badge.svg)](https://scan.coverity.com/projects/rwth-i5-idsg-steve)
 
 
 # Introduction
+
+Emerout version.
 
 SteVe was developed at the RWTH Aachen University and means Steckdosenverwaltung, namely socket administration in German. The aim of SteVe is to support the deployment and popularity of electric mobility, so it is easy to install and to use. SteVe provides basic functions for the administration of charge points, user data, and RFID cards for user authentication and was tested successfully in operation.
 
@@ -23,12 +25,12 @@ We have successfully tested SteVe with charge points manufactured by EBG and Men
 
 ### System Requirements
 
-SteVe requires 
+SteVe requires
 * JDK 8 (both Oracle JDK and OpenJDK are supported)
-* Maven 
+* Maven
 * At least MySQL 5.6.4 (MariaDB 10.0 or later works as well) as database
 
-to build and run. 
+to build and run.
 
 SteVe is designed to run standalone, a java servlet container / web server (e.g. Apache Tomcat), is **not** required.
 
@@ -60,7 +62,7 @@ SteVe is designed to run standalone, a java servlet container / web server (e.g.
       - You _must_ change [the host](src/main/resources/config/prod/main.properties#L22) to the correct IP address of your server
       - You _must_ change [web interface credentials](src/main/resources/config/prod/main.properties#L17-L18)
       - You _can_ access the application via HTTPS, by [enabling it and setting the keystore properties](src/main/resources/config/prod/main.properties#L32-L35)
-     
+
     For advanced configuration please see the [Configuration wiki](https://github.com/RWTH-i5-IDSG/steve/wiki/Configuration)
 
 4. Build SteVe:
@@ -84,7 +86,7 @@ SteVe is designed to run standalone, a java servlet container / web server (e.g.
 After SteVe has successfully started, you can access the web interface using the configured credentials under:
 
     http://<your-server-ip>:<port>/steve/manager
-    
+
 The default port number is 8080.
 
 ### Add a charge point
@@ -97,7 +99,7 @@ The default port number is 8080.
 
 
 As soon as a heartbeat is received, you should see the status of the charge point in the SteVe Dashboard.
- 
+
 *Have fun!*
 
 Screenshots
@@ -116,4 +118,3 @@ Screenshots
 Are you having issues?
 -----
 See the [FAQ](https://github.com/RWTH-i5-IDSG/steve/wiki/FAQ)
-
